@@ -83,7 +83,10 @@
     </screenshots>
     <url type="homepage">https://full-steam-ahead.creeperkatze.dev</url>
     <url type="bugtracker">https://github.com/creeperkatze/full-steam-ahead/issues</url>
+    <url type="donation">https://ko-fi.com/creeperkatze</url>
+    <url type="translate">https://crowdin.com/project/full-steam-ahead</url>
     <url type="vcs-browser">https://github.com/creeperkatze/full-steam-ahead</url>
+    <url type="contribute">https://github.com/creeperkatze/full-steam-ahead</url>
     <developer id="dev.creeperkatze">
         <name>Creeperkatze</name>
     </developer>
