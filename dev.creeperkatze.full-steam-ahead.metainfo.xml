@@ -81,7 +81,7 @@
             <caption>Debug info and logs</caption>
         </screenshot>
     </screenshots>
-    <url type="homepage">https://github.com/creeperkatze/full-steam-ahead</url>
+    <url type="homepage">https://full-steam-ahead.creeperkatze.dev</url>
     <url type="bugtracker">https://github.com/creeperkatze/full-steam-ahead/issues</url>
     <url type="vcs-browser">https://github.com/creeperkatze/full-steam-ahead</url>
     <developer id="dev.creeperkatze">
@@ -111,6 +111,33 @@
     </requires>
     <content_rating type="oars-1.1" />
     <releases>
+        <release version="1.5.3" date="2026-09-28">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.3</url>
+        </release>
+        <release version="1.5.2" date="2026-09-27">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.2</url>
+        </release>
+        <release version="1.5.1" date="2026-09-27">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.1</url>
+        </release>
+        <release version="1.5.0" date="2026-09-27">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.0</url>
+        </release>
+        <release version="1.4.0" date="2026-09-17">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.4.0</url>
+        </release>
+        <release version="1.3.10" date="2026-09-13">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.3.10</url>
+        </release>
+        <release version="1.3.9" date="2026-09-13">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.3.9</url>
+        </release>
+        <release version="1.3.8" date="2026-09-13">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.3.8</url>
+        </release>
+        <release version="1.3.7" date="2026-09-12">
+            <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.3.7</url>
+        </release>
         <release version="1.3.6" date="2026-09-11">
             <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.3.6</url>
         </release>

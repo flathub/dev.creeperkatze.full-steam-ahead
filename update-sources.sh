@@ -24,7 +24,13 @@ curl -fsSL "$raw/$tag/src-tauri/Cargo.lock" -o "$locks/Cargo.lock"
 curl -fsSL "$raw/$tag/pnpm-lock.yaml" -o "$locks/pnpm-lock.yaml"
 
 [ -x "$venv/bin/pip" ] || python3 -m venv --clear "$venv"
-"$venv/bin/pip" install --quiet --upgrade aiohttp PyYAML tomlkit "$tools/node"
+"$venv/bin/pip" install --quiet --upgrade aiohttp PyYAML tomlkit
+
+# pnpm 12 needs package bins in the store index. Upstream's generator leaves them out.
+git -C "$tools" apply "$here/patches/flatpak-builder-tools-pnpm12-manifest.patch"
+"$venv/bin/pip" install --quiet --force-reinstall --no-deps "$tools/node" ||
+	{ git -C "$tools" apply -R "$here/patches/flatpak-builder-tools-pnpm12-manifest.patch"; exit 1; }
+git -C "$tools" apply -R "$here/patches/flatpak-builder-tools-pnpm12-manifest.patch"
 
 "$venv/bin/python" "$tools/cargo/flatpak-cargo-generator.py" \
 	-o "$here/cargo-sources.json" "$locks/Cargo.lock"
