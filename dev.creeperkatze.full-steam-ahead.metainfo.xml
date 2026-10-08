@@ -4,7 +4,7 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>AGPL-3.0-only</project_license>
     <name>Full Steam Ahead</name>
-    <summary>Import games from other launchers into Steam</summary>
+    <summary>Import all your games into Steam</summary>
     <description>
         <p>
             Full Steam Ahead scans the game launchers you already use and adds what it finds to
