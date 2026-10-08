@@ -33,7 +33,7 @@ modules:
   - name: full-steam-ahead
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node22/bin:/usr/lib/sdk/rust-stable/bin:/run/build/full-steam-ahead/pnpm/bin
+      append-path: /usr/lib/sdk/node22/bin:/usr/lib/sdk/rust-stable/bin:/run/build/full-steam-ahead/pnpm
       env:
         CARGO_HOME: /run/build/full-steam-ahead/cargo
         CARGO_NET_OFFLINE: 'true'
@@ -41,24 +41,29 @@ modules:
     sources:
       - type: git
         url: https://github.com/creeperkatze/full-steam-ahead.git
-        tag: v1.3.10
-        commit: 5272cb09215b61c6645803e90b92ba148241458c
+        tag: v1.5.3
+        commit: 6ad32fe957a1457f27b887b6dbfc3d0c537a25fc
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
           release-url-template: https://github.com/creeperkatze/full-steam-ahead/releases/tag/v$version
           is-main-source: true
       - type: archive
-        url: https://registry.npmjs.org/pnpm/-/pnpm-11.1.2.tgz
-        sha256: bfe4d2b2c7a3210565bba62929f9efe493eb5f24627201a102ea4514eae8cf80
+        url: https://registry.npmjs.org/@pnpm/exe.linux-x64/-/exe.linux-x64-12.4.1.tgz
+        sha256: 614d18bdcb121a844c0260b315d76b737e687346c001b8e093fd0a93202c2d6b
         dest: pnpm
+        only-arches: [x86_64]
+      - type: archive
+        url: https://registry.npmjs.org/@pnpm/exe.linux-arm64/-/exe.linux-arm64-12.4.1.tgz
+        sha256: efd504b1fbea3461dda32204481137434557cfc1ed70ab03f0dc6f96dd2be845
+        dest: pnpm
+        only-arches: [aarch64]
       - cargo-sources.json
       - node-sources.json
       - type: file
         path: dev.creeperkatze.full-steam-ahead.metainfo.xml
     build-commands:
-      - ln -s pnpm.mjs pnpm/bin/pnpm
-      - pnpm install --offline --frozen-lockfile
+      - pnpm install --offline --frozen-lockfile --trust-lockfile
       - pnpm tauri build --bundles deb --features disable-auto-updates --config '{"bundle":{"createUpdaterArtifacts":false}}'
       - install -Dm755 "src-tauri/target/release/Full Steam Ahead" /app/bin/full-steam-ahead
       - install -Dm644 -t /app/share/applications/ src-tauri/target/release/bundle/deb/*/data/usr/share/applications/*.desktop
