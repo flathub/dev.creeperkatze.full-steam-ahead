@@ -62,6 +62,8 @@ modules:
       - node-sources.json
       - type: file
         path: dev.creeperkatze.full-steam-ahead.metainfo.xml
+      - type: file
+        path: dev.creeperkatze.full-steam-ahead.svg
     build-commands:
       - pnpm install --offline --frozen-lockfile --trust-lockfile
       - pnpm tauri build --bundles deb --features disable-auto-updates --config '{"bundle":{"createUpdaterArtifacts":false}}'
@@ -70,7 +72,5 @@ modules:
       - mv /app/share/applications/*.desktop /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
       - desktop-file-edit --set-key=Exec --set-value=full-steam-ahead --set-icon=dev.creeperkatze.full-steam-ahead /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
       - install -Dm644 -t /app/share/metainfo/ dev.creeperkatze.full-steam-ahead.metainfo.xml
-      - cp -r src-tauri/target/release/bundle/deb/*/data/usr/share/icons /app/share/
-      - for f in /app/share/icons/hicolor/*/apps/*; do mv "$f" "$(dirname "$f")/dev.creeperkatze.full-steam-ahead.png"; done
-      - install -Dm644 .github/assets/icon.svg /app/share/icons/hicolor/scalable/apps/dev.creeperkatze.full-steam-ahead.svg
+      - install -Dm644 -t /app/share/icons/hicolor/scalable/apps/ dev.creeperkatze.full-steam-ahead.svg
       - install -Dm644 -t /app/share/licenses/dev.creeperkatze.full-steam-ahead/ LICENSE
