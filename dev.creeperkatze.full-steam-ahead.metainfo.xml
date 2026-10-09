@@ -112,12 +112,16 @@
     <requires>
         <display_length compare="ge">1200</display_length>
     </requires>
-    <content_rating type="oars-1.1" />
+    <content_rating type="oars-1.1"/>
     <branding>
         <color type="primary" scheme_preference="light">#b8dfff</color>
         <color type="primary" scheme_preference="dark">#143c5d</color>
     </branding>
     <releases>
+        <release version="1.5.5" date="2026-10-09">
+            <url type="details">https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.5</url>
+            <description></description>
+        </release>
         <release version="1.5.3" date="2026-09-28">
             <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.3</url>
         </release>
