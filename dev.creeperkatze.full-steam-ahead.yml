@@ -41,8 +41,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/creeperkatze/full-steam-ahead.git
-        tag: v1.5.3
-        commit: 6ad32fe957a1457f27b887b6dbfc3d0c537a25fc
+        tag: v1.5.5
+        commit: 80f50ac6a9e59f334c5ca6c9d2674d905edaef13
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -68,9 +68,11 @@ modules:
       - install -Dm755 "src-tauri/target/release/Full Steam Ahead" /app/bin/full-steam-ahead
       - install -Dm644 -t /app/share/applications/ src-tauri/target/release/bundle/deb/*/data/usr/share/applications/*.desktop
       - mv /app/share/applications/*.desktop /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
-      - desktop-file-edit --set-key=Exec --set-value=full-steam-ahead --set-icon=dev.creeperkatze.full-steam-ahead /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
+      - desktop-file-edit --set-key=Exec --set-value=full-steam-ahead --set-icon=dev.creeperkatze.full-steam-ahead
+        /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
       - install -Dm644 -t /app/share/metainfo/ dev.creeperkatze.full-steam-ahead.metainfo.xml
       - cp -r src-tauri/target/release/bundle/deb/*/data/usr/share/icons /app/share/
-      - for f in /app/share/icons/hicolor/*/apps/*; do mv "$f" "$(dirname "$f")/dev.creeperkatze.full-steam-ahead.png"; done
+      - for f in /app/share/icons/hicolor/*/apps/*; do mv "$f" "$(dirname "$f")/dev.creeperkatze.full-steam-ahead.png";
+        done
       - install -Dm644 .github/assets/icon.svg /app/share/icons/hicolor/scalable/apps/dev.creeperkatze.full-steam-ahead.svg
       - install -Dm644 -t /app/share/licenses/dev.creeperkatze.full-steam-ahead/ LICENSE
