@@ -62,16 +62,15 @@ modules:
       - node-sources.json
       - type: file
         path: dev.creeperkatze.full-steam-ahead.metainfo.xml
-      - type: file
-        path: dev.creeperkatze.full-steam-ahead.svg
     build-commands:
       - pnpm install --offline --frozen-lockfile --trust-lockfile
       - pnpm tauri build --bundles deb --features disable-auto-updates --config '{"bundle":{"createUpdaterArtifacts":false}}'
       - install -Dm755 "src-tauri/target/release/Full Steam Ahead" /app/bin/full-steam-ahead
-      - install -Dm644 -t /app/share/applications/ src-tauri/target/release/bundle/deb/*/data/usr/share/applications/*.desktop
-      - mv /app/share/applications/*.desktop /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
-      - desktop-file-edit --set-key=Exec --set-value=full-steam-ahead --set-icon=dev.creeperkatze.full-steam-ahead
+      - install -Dm644 src-tauri/target/release/bundle/deb/*/data/usr/share/applications/*.desktop
+        /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
+      - desktop-file-edit --set-key=Exec --set-value=full-steam-ahead --set-key=StartupWMClass
+        --set-value=full-steam-ahead --set-icon=dev.creeperkatze.full-steam-ahead
         /app/share/applications/dev.creeperkatze.full-steam-ahead.desktop
       - install -Dm644 -t /app/share/metainfo/ dev.creeperkatze.full-steam-ahead.metainfo.xml
-      - install -Dm644 -t /app/share/icons/hicolor/scalable/apps/ dev.creeperkatze.full-steam-ahead.svg
+      - install -Dm644 src-tauri/icons/linux/icon.svg /app/share/icons/hicolor/scalable/apps/dev.creeperkatze.full-steam-ahead.svg
       - install -Dm644 -t /app/share/licenses/dev.creeperkatze.full-steam-ahead/ LICENSE
