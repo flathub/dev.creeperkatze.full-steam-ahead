@@ -41,8 +41,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/creeperkatze/full-steam-ahead.git
-        tag: v1.5.5
-        commit: 80f50ac6a9e59f334c5ca6c9d2674d905edaef13
+        tag: v1.5.6
+        commit: 979e59880b0f025c522e21e8ac938afaa2334a0e
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
