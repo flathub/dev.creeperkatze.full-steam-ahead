@@ -44,11 +44,6 @@
         </screenshot>
         <screenshot>
             <image type="source">
-                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/scanning.png</image>
-            <caption>Scan your launchers for installed games</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">
                 https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/review.png</image>
             <caption>Review every change before it's applied</caption>
         </screenshot>
