@@ -33,52 +33,29 @@
     <launchable type="desktop-id">dev.creeperkatze.full-steam-ahead.desktop</launchable>
     <screenshots>
         <screenshot type="default">
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/start.png</image>
-            <caption>Pick your Steam user</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/sources.png</image>
+            <image type="source">
+                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/sources.png</image>
             <caption>Choose which games to import</caption>
         </screenshot>
         <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/artwork.png</image>
+            <image type="source">
+                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/artwork.png</image>
             <caption>Review matched grid images, heroes, and logos</caption>
         </screenshot>
         <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/steamgriddb.png</image>
-            <caption>Browse custom artwork on SteamGridDB</caption>
+            <image type="source">
+                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/scanning.png</image>
+            <caption>Scan your launchers for installed games</caption>
         </screenshot>
         <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/review.png</image>
+            <image type="source">
+                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/review.png</image>
             <caption>Review every change before it's applied</caption>
         </screenshot>
         <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/done.png</image>
+            <image type="source">
+                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/done.png</image>
             <caption>All done, with an automatic backup</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_sources.png</image>
-            <caption>Toggle and configure sources</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_artwork.png</image>
-            <caption>Artwork options</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_steam.png</image>
-            <caption>Steam behavior</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_backups.png</image>
-            <caption>Manage and restore backups</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_customization.png</image>
-            <caption>Language and color scheme</caption>
-        </screenshot>
-        <screenshot>
-            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/settings_debug.png</image>
-            <caption>Debug info and logs</caption>
         </screenshot>
     </screenshots>
     <url type="homepage">https://full-steam-ahead.creeperkatze.dev</url>
@@ -112,7 +89,7 @@
     <requires>
         <display_length compare="ge">1200</display_length>
     </requires>
-    <content_rating type="oars-1.1"/>
+    <content_rating type="oars-1.1" />
     <branding>
         <color type="primary" scheme_preference="light">#b8dfff</color>
         <color type="primary" scheme_preference="dark">#143c5d</color>
@@ -124,7 +101,7 @@
         </release>
         <release version="1.5.5" date="2026-10-09">
             <url type="details">https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.5</url>
-            <description/>
+            <description />
         </release>
         <release version="1.5.3" date="2026-09-28">
             <url>https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.5.3</url>
