@@ -22,11 +22,11 @@ finish-args:
 
   - --filesystem=~/.config/heroic:ro # Heroic (native)
   - --filesystem=~/.var/app/com.heroicgameslauncher.hgl:ro # Heroic (Flatpak)
-  - --filesystem=xdg-data/lutris:ro # Lutris (native)
-  - --filesystem=~/.var/app/net.lutris.Lutris:ro # Lutris (Flatpak)
-  - --filesystem=~/.var/app/com.usebottles.bottles:ro # Bottles (Flatpak)
   - --filesystem=~/.config/legendary:ro # Legendary
-  - --filesystem=~/.config/itch:ro # itch.io
+  - --filesystem=~/.config/itch:ro # itch.io (native)
+  - --filesystem=~/.var/app/io.itch.itch:ro # itch.io (Flatpak)
+  - --filesystem=~/.config/minigalaxy:ro # MiniGalaxy (native)
+  - --filesystem=~/.var/app/io.github.sharkwouter.Minigalaxy:ro # MiniGalaxy (Flatpak)
   - --filesystem=~/GOG Games:ro # MiniGalaxy
 
 modules:
