@@ -33,23 +33,23 @@
     <launchable type="desktop-id">dev.creeperkatze.full-steam-ahead.desktop</launchable>
     <screenshots>
         <screenshot type="default">
-            <image type="source">
-                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/sources.png</image>
+            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/sources.png</image>
             <caption>Choose which games to import</caption>
         </screenshot>
         <screenshot>
-            <image type="source">
-                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/artwork.png</image>
+            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/artwork.png</image>
             <caption>Review matched grid images, heroes, and logos</caption>
         </screenshot>
         <screenshot>
-            <image type="source">
-                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/review.png</image>
+            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/steamgriddb.png</image>
+            <caption>Browse custom artwork on SteamGridDB</caption>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/review.png</image>
             <caption>Review every change before it's applied</caption>
         </screenshot>
         <screenshot>
-            <image type="source">
-                https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/done.png</image>
+            <image type="source">https://raw.githubusercontent.com/creeperkatze/full-steam-ahead/main/.github/assets/screenshots/linux/done.png</image>
             <caption>All done, with an automatic backup</caption>
         </screenshot>
     </screenshots>
