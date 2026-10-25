@@ -90,9 +90,13 @@
         <color type="primary" scheme_preference="dark">#143c5d</color>
     </branding>
     <releases>
+        <release version="1.6.2" date="2026-10-25">
+            <url type="details">https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.6.2</url>
+            <description></description>
+        </release>
         <release version="1.6.1" date="2026-10-14">
             <url type="details">https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.6.1</url>
-            <description></description>
+            <description/>
         </release>
         <release version="1.6.0" date="2026-10-13">
             <url type="details">https://github.com/creeperkatze/full-steam-ahead/releases/tag/v1.6.0</url>
