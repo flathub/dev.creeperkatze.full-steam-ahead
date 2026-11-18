@@ -7,6 +7,10 @@ on:
 
 env:
   FLATPAK_ID: dev.creeperkatze.full-steam-ahead
+  # Workaround for https://github.com/flathub-infra/flatpak-external-data-checker/issues/654
+  GIT_CONFIG_COUNT: 1
+  GIT_CONFIG_KEY_0: safe.directory
+  GIT_CONFIG_VALUE_0: "*"
 
 jobs:
   auto-update:
